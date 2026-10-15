@@ -46,7 +46,28 @@
     font-size: 15px;
     color: #2a2a2a;
   }
+  ul {
+    margin: 0 0 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #2a2a2a;
+  }
+  li { margin-bottom: 6px; }
+  .table-scroll { overflow-x: auto; margin-bottom: 14px; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+  }
+  th, td {
+    border: 1px solid var(--line);
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: #f7f7f7; }
   a { color: var(--accent); }
+  mark { background: #fff3a3; padding: 0 2px; }
   footer {
     margin-top: 48px;
     font-size: 13px;
@@ -57,70 +78,172 @@
 <body>
 <div class="wrap">
   <h1>Privacy Policy</h1>
-  <div class="updated">Body Goals · Last updated: 23 September 2026</div>
+  <div class="updated">Body Goals · Last updated: 15 October 2026</div>
+
+  <p>This policy explains what personal data Body Goals collects, why we collect it, who we share it with, how long we keep it, and the choices and rights you have. We have tried to keep it in plain English.</p>
 
   <h2>1. Who we are</h2>
   <p>Body Goals is operated by James Maxwell Rigby, trading as Body Goals, a sole trader based in the United Kingdom. Our business address is 1A Sumner Avenue, Bolton, BL2 5RF.</p>
-  <p>For any privacy questions, contact us at <a href="mailto:rigbyjames100+support@gmail.com">rigbyjames100+support@gmail.com</a>.</p>
+  <p>We are the "controller" of your personal data under UK GDPR, which means we decide how and why it is used.</p>
+  <p>For any privacy questions or to use your rights, contact us at <a href="mailto:rigbyjames100+support@gmail.com">rigbyjames100+support@gmail.com</a>.</p>
+  <p>We are registered with the UK Information Commissioner's Office (ICO) as a data controller. <mark>[Add your ICO registration number here once you have it.]</mark></p>
 
   <h2>2. What data we collect</h2>
-  <p>Account information: your name, email address, username, phone number, password (handled securely by Supabase), and profile/verification photos.</p>
-  <p>Profile information: your role (trainer or client), date of birth or age, gender, specialties, fitness goals, experience level, gym affiliation, location text, and bio.</p>
-  <p>Health and fitness information: your height, weight, body measurements, progress records, and any health notes you choose to enter. This is health data, which is a special category of personal data under UK GDPR.</p>
-  <p>Photos: profile pictures and, for clients, progress photos you choose to upload.</p>
-  <p>Emergency contacts: if you add an emergency contact, we store their name and phone number. Please only add someone who is happy for you to do so.</p>
-  <p>Verification documents (trainers only): government-issued ID photos (passport, driving licence), selfies for identity matching, professional certification documents, insurance policy documents, and tax identification numbers (UTR). These are collected for verification, trust &amp; safety, and tax compliance purposes.</p>
-  <p>Activity data: sessions booked, goals, messages sent within the app (including group messages), reviews, and reports you submit.</p>
-  <p>Payment records: transaction history for bookings, courses and memberships, and, for saved payment methods, the card brand, last 4 digits and expiry date. Full card numbers are never stored by us.</p>
-  <p>Device &amp; usage data: your push notification token and device type, and basic technical information needed to run the app (e.g. crash logs), where you have analytics tracking enabled.</p>
+  <p><strong>Account information:</strong> your name, email address, username, phone number, password (handled securely by Supabase), and profile photo.</p>
+  <p><strong>Profile information:</strong> your role (trainer or client), date of birth or age, gender, specialties, fitness goals, experience level, gym affiliation, location text, and bio.</p>
+  <p><strong>Health and fitness information:</strong> your height, weight, body measurements, progress records, and any health notes you choose to enter. This is health data, which is a special category of personal data under UK GDPR and gets extra protection. You choose what to enter, and none of it is required to use the basic service.</p>
+  <p><strong>Photos:</strong> profile pictures and, for clients, progress photos you choose to upload.</p>
+  <p><strong>Emergency contacts:</strong> if you add an emergency contact, we store their name and phone number. Please only add someone who is happy for you to do so.</p>
+  <p><strong>Verification documents (trainers only):</strong> government-issued ID photos (passport or driving licence), selfies for identity matching, professional certification documents, insurance policy documents, and tax identification numbers (UTR). These are collected for verification, trust &amp; safety, and tax compliance.</p>
+  <p><strong>Activity data:</strong> sessions booked, goals, messages sent within the app (including group messages), reviews, and reports you submit.</p>
+  <p><strong>Payment records:</strong> transaction history for bookings, courses and memberships, and, for saved payment methods, the card brand, last 4 digits and expiry date. We never store full card numbers.</p>
+  <p><strong>Device &amp; usage data:</strong> your push notification token and device type, and basic technical information needed to run the app (for example crash logs), where you have analytics tracking enabled.</p>
+  <p><strong>Location (optional):</strong> if you turn on location features, for example to find trainers or gyms near you, we use your device's approximate or precise location, but only with your permission. You can switch this off at any time in your device settings or in Privacy Settings. <mark>[Confirm whether you store location history or only use it at the moment of the search. Say which here.]</mark></p>
+  <p><strong>Where it comes from:</strong> almost all of this comes from you directly. Some comes from the apps and services we use to run Body Goals (for example Stripe confirming a payment). Information about other people, such as an emergency contact, comes from you, so please only share details you have permission to share.</p>
 
-  <h2>3. How we use your data</h2>
-  <p>To create and manage your account, and to provide the core service (connecting trainers and clients).</p>
-  <p>To process bookings and payments, display your sessions, and enable communication between trainers and clients.</p>
-  <p>To send you notifications you have opted into (see Notification Settings).</p>
-  <p>To verify trainers, keep users safe, handle reports, and prevent fraud.</p>
-  <p>To respond to support requests sent via Help &amp; Support.</p>
-  <p>To improve the app, only where you have enabled analytics tracking in Privacy Settings.</p>
-  <p>Our legal bases under UK GDPR are: performing our contract with you (running your account, bookings and payments); our legitimate interests (security, fraud prevention and improving the service); legal obligations (such as tax records); and your consent (for health information, optional analytics and marketing). Where we rely on consent, you can withdraw it at any time, for example by deleting the information or your account.</p>
+  <h2>3. How we use your data, and our legal bases</h2>
+  <p>UK GDPR requires us to have a legal reason (a "legal basis") for each use of your data. These are ours:</p>
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr><th>What we do</th><th>Data involved</th><th>Legal basis</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Create and run your account; connect trainers and clients; show your profile and sessions</td>
+        <td>Account, profile, activity data</td>
+        <td>Contract (providing the service you signed up for)</td>
+      </tr>
+      <tr>
+        <td>Process bookings, payments, refunds and memberships</td>
+        <td>Payment records, activity data</td>
+        <td>Contract; legal obligation (accounting and tax records)</td>
+      </tr>
+      <tr>
+        <td>Store and use health and fitness information you enter, including progress photos</td>
+        <td>Health and fitness information, photos</td>
+        <td>Your explicit consent (the condition for special category data). You can withdraw it at any time.</td>
+      </tr>
+      <tr>
+        <td>Verify trainers, including comparing selfie to ID, and review certification and insurance</td>
+        <td>Verification documents</td>
+        <td>Legitimate interests (keeping clients safe and the platform trustworthy); explicit consent where a selfie comparison counts as biometric data</td>
+      </tr>
+      <tr>
+        <td>Collect tax information from trainers and share it with tax authorities where required</td>
+        <td>UTR, payment records, identity details</td>
+        <td>Legal obligation</td>
+      </tr>
+      <tr>
+        <td>Keep the app secure, handle reports, enforce our terms and community guidelines, prevent fraud</td>
+        <td>Account, activity, device data, reports</td>
+        <td>Legitimate interests (security, safety and preventing fraud and abuse); legal obligation where the law requires it</td>
+      </tr>
+      <tr>
+        <td>Send notifications you have turned on</td>
+        <td>Push token, account data</td>
+        <td>Consent (through your Notification Settings)</td>
+      </tr>
+      <tr>
+        <td>Use your location for features like finding trainers nearby</td>
+        <td>Device location</td>
+        <td>Consent (through your device permission and Privacy Settings). You can withdraw it at any time.</td>
+      </tr>
+      <tr>
+        <td>Respond to support requests</td>
+        <td>Account data, what you tell us</td>
+        <td>Legitimate interests (helping our users); contract</td>
+      </tr>
+      <tr>
+        <td>Improve the app using analytics</td>
+        <td>Device and usage data</td>
+        <td>Consent, and only if you enable analytics in Privacy Settings</td>
+      </tr>
+      <tr>
+        <td>Marketing emails, if you choose to receive them</td>
+        <td>Email address, preferences</td>
+        <td>Consent. You can unsubscribe at any time.</td>
+      </tr>
+      <tr>
+        <td>Establish, exercise or defend legal claims and comply with legal requests</td>
+        <td>Any data relevant to the claim or request</td>
+        <td>Legal obligation; legitimate interests</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Where we rely on consent, you can withdraw it at any time, for example from Privacy Settings, by deleting the information, or by deleting your account. Withdrawing consent does not affect anything we did before you withdrew it. If you withdraw consent for health information, we will stop using it, but some features that depend on it may stop working.</p>
+  <p>We do not use your progress photos, health information or private messages for advertising or marketing.</p>
+  <p>We do not make decisions about you based solely on automated processing that has legal or similarly significant effects. <mark>[Confirm this is true for your verification process. If an automated check can reject a trainer without a person looking, say so here and explain how to ask for a human review.]</mark></p>
 
   <h2>4. Who we share data with</h2>
-  <p>Supabase: our database, file storage and authentication provider. They process data on our behalf and do not use it for their own purposes.</p>
-  <p>Stripe: in-app payments are processed via Stripe. Payment details are handled directly by Stripe; the app only stores the card brand, last 4 digits, and expiry for saved payment methods.</p>
-  <p>Email delivery: we use [PROVIDER NAME] to send account and booking emails on our behalf.</p>
-  <p>Push notifications: notifications are delivered through Expo and, on Android devices, Google Firebase Cloud Messaging.</p>
-  <p>Other users: your profile (and, if you are a trainer, your reviews) is visible to other users as part of the core function of the app, subject to your Profile Visibility setting. Clients and trainers who book together can see the information needed to run their sessions.</p>
-  <p>Verification documents (trainers only): your ID photos, certification documents, insurance policies, and tax information are viewed only by the app admin for verification purposes and are not shared with other users or third parties.</p>
-  <p>We do not sell your personal data to third parties, and we do not share it for third-party marketing without your consent (see Third-party Sharing in Privacy Settings).</p>
+  <p><strong>Supabase:</strong> our database, file storage and authentication provider. They process data on our behalf and do not use it for their own purposes.</p>
+  <p><strong>Stripe:</strong> in-app payments are processed by Stripe. Payment details are handled directly by Stripe. Stripe also acts as an independent controller for its own legal and fraud-prevention duties, under its own privacy policy. The app only stores the card brand, last 4 digits and expiry for saved payment methods.</p>
+  <p><strong>Email delivery:</strong> we use <mark>[PROVIDER NAME]</mark> to send account and booking emails on our behalf.</p>
+  <p><strong>Push notifications:</strong> notifications are delivered through Expo and, on Android devices, Google Firebase Cloud Messaging.</p>
+  <p><strong>Analytics (only if you enable it):</strong> if you turn on analytics in Privacy Settings, we use <mark>[ANALYTICS PROVIDER NAME]</mark> to understand how the app is used and to find bugs. We only receive analytics data from you after you opt in, and we do not use it for advertising.</p>
+  <p><strong>Other users:</strong> your profile (and, if you are a trainer, your reviews) is visible to other users as part of the core function of the app, subject to your Profile Visibility setting. Clients and trainers who book together can see the information needed to run their sessions. Content you post in group chats is visible to the other members of that group. Other users could copy or screenshot what you share, and we cannot control that, so please think before you share.</p>
+  <p><strong>Verification documents (trainers only):</strong> your ID photos, certification documents, insurance policies and tax information are viewed only by the app admin for verification purposes and are not shared with other users.</p>
+  <p><strong>Authorities and advisers:</strong> we may share data with law enforcement, regulators or tax authorities (such as HMRC) where the law requires it or where we believe it is necessary to protect someone's safety or to deal with fraud or serious misconduct. We may share data with professional advisers (for example accountants or lawyers) who are bound by confidentiality.</p>
+  <p><strong>Sale of the business:</strong> if Body Goals were ever sold or merged, your data could be transferred to the new owner, who would have to keep treating it in line with this policy and the law.</p>
+  <p>We do not sell your personal data, and we do not share it for third-party marketing without your consent (see Third-party Sharing in Privacy Settings).</p>
 
-  <h2>5. Data retention</h2>
-  <p>We keep your data for as long as your account is active.</p>
-  <p>If you delete your account from within the app, deletion takes effect immediately and your personal data is permanently removed, save for any records we are legally required to retain (e.g. payment records for tax purposes, or records needed for fraud prevention).</p>
-  <p>If you cannot access the app, email us from the address you signed up with and we will delete your account within 30 days.</p>
+  <h2>5. How long we keep your data</h2>
+  <p>We keep data only for as long as we need it for the reasons we collected it, including meeting legal, tax and accounting duties. We consider how much data there is, how sensitive it is, the risk if it were misused, and what the law requires. These are our usual periods:</p>
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr><th>Data</th><th>How long we keep it</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Account, profile, activity, messages, health information, photos</td><td>While your account is active. Deleted when you delete your account (see below).</td></tr>
+      <tr><td>Trainer ID photos and selfies</td><td><mark>Images are deleted within 30 days after we make the verification decision, or when you close your account, whichever is sooner. We keep a record that you were verified.</mark></td></tr>
+      <tr><td>Certification and insurance documents</td><td><mark>While your trainer account is active, then deleted when you close it.</mark></td></tr>
+      <tr><td>Tax information (UTR) and payment records</td><td>Six years after the end of the relevant tax year, or as long as the law requires.</td></tr>
+      <tr><td>Reports and safety records (for fraud and abuse prevention)</td><td><mark>2 years after the report is resolved, or longer if the law or an investigation requires it.</mark></td></tr>
+      <tr><td>Support emails</td><td><mark>2 years after the request is closed.</mark></td></tr>
+      <tr><td>Location and analytics data (if you turn them on)</td><td><mark>Location is used only for the feature you asked for [and not kept afterwards]. Analytics data is kept for up to 14 months, then deleted or anonymised.</mark></td></tr>
+      <tr><td>Backups</td><td><mark>Deleted data is removed from backups within 35 days.</mark> Until then, backup copies are kept securely and are not used for anything else.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>If you delete your account from within the app, your personal data is permanently removed straight away, except for records we are legally required to keep (such as payment records for tax purposes) or need to prevent fraud.</p>
+  <p>If you cannot access the app, email us from the address you signed up with and we will delete your account within 30 days. See <a href="./delete-account.html">our account deletion page</a>.</p>
 
   <h2>6. Your rights</h2>
-  <p>You can access and export a copy of your data at any time from Privacy &amp; Data &gt; Export Your Data.</p>
-  <p>You can update your profile information at any time from Profile Settings.</p>
-  <p>You can delete your account and data at any time from Privacy &amp; Data &gt; Delete Account. Deletion is immediate. You can also read how to request deletion at <a href="./delete-account.html">our account deletion page</a>.</p>
-  <p>You can withdraw consent for marketing emails, analytics, location tracking, and data sharing at any time from Privacy Settings.</p>
-  <p>If you are in the UK or EU, you have rights under UK GDPR / GDPR including the right to object, restrict processing, and lodge a complaint with the UK Information Commissioner's Office (<a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a>).</p>
-  <p>If you are in the US, we honour equivalent rights to access, delete, and opt out of the sale or sharing of personal information (we do not sell personal data).</p>
+  <p>Under UK GDPR you have these rights over your personal data:</p>
+  <ul>
+    <li><strong>Access:</strong> get a copy of your data and information about how we use it. You can export your data at any time from Privacy &amp; Data &gt; Export Your Data.</li>
+    <li><strong>Correction:</strong> ask us to fix inaccurate data. You can update most of it yourself in Profile Settings.</li>
+    <li><strong>Deletion:</strong> ask us to delete your data. You can delete your account at any time from Privacy &amp; Data &gt; Delete Account.</li>
+    <li><strong>Portability:</strong> receive your data in a structured, machine-readable form, or have it sent to someone else.</li>
+    <li><strong>Restriction:</strong> ask us to pause using your data, for example while you challenge its accuracy.</li>
+    <li><strong>Objection:</strong> object to us using your data based on our legitimate interests, and object to direct marketing at any time.</li>
+    <li><strong>Withdraw consent:</strong> where we rely on your consent (for example health information, notifications, location, analytics and marketing), withdraw it at any time from Privacy Settings.</li>
+  </ul>
+  <p>To use any of these rights, email <a href="mailto:rigbyjames100+support@gmail.com">rigbyjames100+support@gmail.com</a>. We will normally respond within one month. We may need to check your identity first. There is no charge unless a request is clearly unfounded or excessive.</p>
+  <p>If you are not happy with how we handle your data, please tell us first so we can try to put it right. You also have the right to complain to the UK Information Commissioner's Office (<a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a>, telephone 0303 123 1113).</p>
+  <p>Body Goals is operated from the UK and aimed at users in the UK. If you live elsewhere, you may have additional rights under your local law. Contact us and we will consider your request.</p>
 
   <h2>7. Age requirement</h2>
-  <p>You must be at least 18 years old to use Body Goals. We do not knowingly collect data from anyone under this age.</p>
+  <p>You must be at least 18 years old to use Body Goals. We do not knowingly collect data from anyone under 18. If you believe a child has given us data, contact us and we will delete it.</p>
 
   <h2>8. International transfers</h2>
-  <p>Our database is hosted in the United Kingdom (London). Some of our providers, such as Stripe and Google, may process data outside the UK. Where they do, they rely on approved safeguards for international transfers.</p>
+  <p>Our database is hosted in the United Kingdom (London). Some of our providers, such as Stripe, Google (Firebase) and Expo, may process data outside the UK, including in the United States. Where they do, we make sure a lawful safeguard is in place, such as the UK-US Data Bridge (where the provider is certified under it) or the UK International Data Transfer Agreement or Addendum. You can contact us for more detail on the safeguard used for a particular provider.</p>
 
   <h2>9. Security</h2>
-  <p>Data is transmitted using encrypted connections (HTTPS/TLS) and stored using our infrastructure provider's security controls.</p>
-  <p>No system is 100% secure, but we take reasonable steps to protect your information.</p>
+  <p>Data is transmitted using encrypted connections (HTTPS/TLS) and stored using our infrastructure provider's security controls. Access to sensitive information such as verification documents is restricted to the app admin.</p>
+  <p>No system is completely secure, but we take reasonable steps to protect your information. If a data breach is likely to put you at risk, we will tell you and, where required, the ICO.</p>
 
-  <h2>10. Changes to this policy</h2>
-  <p>We may update this policy as the app evolves. Material changes will be flagged in the app.</p>
-  <p>Last updated: 23 September 2026.</p>
+  <h2>10. Links to other services</h2>
+  <p>The app or this site may link to other websites or services. We do not control them and are not responsible for how they handle your data, so please read their privacy policies.</p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>We may update this policy as the app evolves. If we make a material change, we will notify you in the app (and by email where the change significantly affects how we use your data) before it takes effect. Where the law requires your consent for a new use, we will ask for it.</p>
+  <p>Last updated: 15 October 2026.</p>
 
   <footer>
-    Body Goals — see also our <a href="./terms.html">Terms of Service</a>.
+    Body Goals — see also our <a href="./terms.html">Terms of Service</a> and <a href="./community-guidelines.html">Community Guidelines</a>.
   </footer>
 </div>
 </body>
